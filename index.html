@@ -27,15 +27,18 @@
 
 <body id="page-top">
 
-    <div class="py-2" style="display: flex; justify-content: center; height: 40px;">
-        <span style="color: #2b7343; font-weight: bold;">Call now (+92) 302-4178634</span>
-    </div>
-
     <!-- Navigation-->
 
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 mt-4" id="mainNav">
-        <div class="container px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top  " style="padding-top: 0;" id="mainNav">
+
+
+        <div class="mb-lg-3" id="topbar"
+            style="display: flex; justify-content: center; height: 40px; background-color: white;">
+            <span class="py-2" style="color: #2b7343; font-weight: bold;">Call Now (+92) 302-4178634</span>
+        </div>
+
+        <div class="container px-4 px-lg-5 py-lg-2 pb-lg-0" >
             <a class="navbar-brand" href="#page-top">Chaudhry Daniyal</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -58,7 +61,8 @@
                 <div class="col-lg-6 align-self-end">
                     <h2 class="text-white font-weight-bold">Software Consultant</h2>
                     <br />
-                    <p class="text-white-75" style="font-size: medium;">Expertise in Backend Development, Data Science, Cloud Computing &
+                    <p class="text-white-75" style="font-size: medium;">Expertise in Backend Development, Data Science,
+                        Cloud Computing &
                         Internet of Things.</p>
                 </div>
 
@@ -71,13 +75,12 @@
                         <!-- <h5 class="text-white font-weight-bold">Email:</h5> -->
                         <i class="bi-envelope fs-5 mb-3 text-white-75"></i> &nbsp;
 
-                        
-                        <span
-                            class="text-white-75">daniyalkhalid@yahoo.com</span>
+
+                        <span class="text-white-75">daniyalkhalid@yahoo.com</span>
                     </div>
                     <div>
                         <!-- <h5 class="text-white font-weight-bold">Phone:</h5>  -->
-                        
+
                         <i class="bi-phone fs-5 mb-3 text-white-75"></i>
 
                         <span class="text-white-75">+92 302
@@ -366,6 +369,24 @@
 
     <script src="js/scripts.js"></script>
     <script src="js/contactForm.js"></script>
+
+    <script>
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+
+
+            if (currentScrollPos < 30) {
+                document.getElementById("topbar").style.display = "flex";
+
+            } else {
+                document.getElementById("topbar").style.display = "none";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+    </script>
 
     <!-- <script src="js/contact.js"></script> -->
 
