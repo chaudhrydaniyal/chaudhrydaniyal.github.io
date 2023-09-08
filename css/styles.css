@@ -11000,3 +11000,27 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+
+
+
+@media screen and (min-width : 600px) {
+
+  .bannerimage{
+    width: 40vw;
+    height: 65vh;
+  }
+  
+}
+
+
+
+@media screen and (max-width : 599px) {
+
+  .bannerimage{
+    margin-left: 3%;
+    width: 85vw;
+    height: 40vh;
+  }
+  
+}
