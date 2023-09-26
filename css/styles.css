@@ -10947,7 +10947,7 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
+    height: 80vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
@@ -11008,7 +11008,7 @@ header.masthead h1, header.masthead .h1 {
 
   .bannerimage{
     width: 40vw;
-    height: 65vh;
+    height: 50vh;
   }
   
 }
